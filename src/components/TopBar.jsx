@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
+import Profile from "../component/topbar/Profile";
+import Status from "../component/topbar/Status";
+import "../styles/topbar.css";
 
 const TopBar = () => {
   return (
-    <div>TopBar</div>
-  )
-}
+    <>
+      <div className="topbar-container">
+        <Profile />
 
-export default TopBar
+        <div className="leftpart">
+          <Status type={"matterstatus"} title={"Matter Status"} />
+          <Status type={"loggedin"} title={"Total Time Logged"} />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default TopBar;

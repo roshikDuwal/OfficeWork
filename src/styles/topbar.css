@@ -1,0 +1,95 @@
+/* TopBar Container  */
+.topbar-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.profile-container {
+  border-radius: 15px;
+  background-color: white;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+
+}
+
+.profile-container .profile-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-container .profile-logo img {
+  width: 10%;
+  border-radius: 80%;
+}
+
+.profile-container .profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-left: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.profile-details div {
+  display: flex;
+  align-items: center;
+}
+
+.profile-details div h4 {
+  font-weight: 700;
+  min-width: 30%;
+}
+
+
+
+.leftpart {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+/* StatusBar Container  */
+.status-container {
+  width: 45%;
+  border-radius: 15px;
+  background-color: white;
+  padding: 0.9rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.loggedintime {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  height: 100%;
+ 
+}
+
+.loggedintime svg {
+  font-size: 8rem;
+}
+
+
+@media screen and (max-width: 1170px) {
+  .topbar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .profile-container {
+    width: 100%;
+  }
+
+  .leftpart{
+    width: 100%;
+  }
+}
