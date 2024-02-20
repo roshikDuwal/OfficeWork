@@ -7,33 +7,39 @@
   margin-top: 10px;
   margin-bottom: 8px;
   font-family: sans-serif;
-  background:white;
+  background: whitesmoke;
+  border-radius: 10px;
+  gap: 15px;
 }
 
 .left-container {
-  border: 0.5px solid rgb(240, 226, 226);
+  border: 0.5px solid rgb(255, 244, 244);
   display: flex;
   flex-direction: column;
   align-items: start;
   flex-wrap: wrap;
-  width: 50%;
+  width: 45%;
   height: 100%;
   margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+
+  margin-right: 20px;
   margin-bottom: 10px;
   font: sans-serif;
+  border-radius: 14px;
+  background: white;
 }
 .right-container {
-  border: 0.5px solid rgb(240, 226, 226);
+  border: 0.5px solid rgb(255, 244, 244);
   display: flex;
   flex-direction: column;
   align-items: start;
   flex-wrap: wrap;
-  width: 50%;
+  width: 56%;
   height: 100%;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-left: 10px;
+  border-radius: 14px;
+  background: white;
 }
 
 h1 {

@@ -3,15 +3,15 @@ import { FaBriefcase } from "react-icons/fa";
 
 const arr = [
   {
-    title: "Title 1",
+    title: "React Project",
     description: "Description 1",
   },
   {
-    title: "Title 2",
+    title: "Dot Net Project",
     description: "Description jjdhha jdnlkfnsa klkdf klNLKDJ SkSKLSD 2",
   },
   {
-    title: "Title 3",
+    title: "Wordpress Project",
     description: "Description 3",
   },
 ];
