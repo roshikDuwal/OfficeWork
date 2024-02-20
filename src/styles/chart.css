@@ -1,0 +1,30 @@
+
+#chart {
+    width: 70%; 
+    border: 2px solid red;
+  }
+  
+  /* Targeting the chart title */
+  .ApexChartsTitle {
+    font-size: 24px; /* Set the font size */
+    color: #333; /* Set the font color */
+  }
+  
+  /* Targeting the chart labels */
+  .ApexChartsDonutLabels text {
+    font-size: 14px; /* Set the font size */
+    fill: #666; /* Set the font color */
+  }
+  
+  /* Targeting the chart slices */
+  .ApexChartsDonutSeries path {
+    stroke-width: 2px; /* Set the stroke width */
+  }
+  
+  /* Targeting the tooltip */
+  .ApexChartsTooltip {
+    font-size: 14px; /* Set the font size */
+    background-color: #fff; /* Set the background color */
+    border: 1px solid #ccc; /* Set the border */
+    color: #333; /* Set the font color */
+  }
