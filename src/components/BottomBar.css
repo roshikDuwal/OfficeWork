@@ -4,9 +4,10 @@
   align-items: center;
   align-items: center;
   height: 500px;
-  margin-top: 400px;
+  margin-top: 10px;
   margin-bottom: 8px;
   font-family: sans-serif;
+  background:white;
 }
 
 .left-container {
@@ -88,7 +89,7 @@ h2 {
   color: rgb(51, 49, 49);
   font-family: sans-serif;
 }
-.logo{
-    display: flex;
-    gap: 10px;
+.logo {
+  display: flex;
+  gap: 10px;
 }
