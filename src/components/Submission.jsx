@@ -1,53 +1,50 @@
-import "../styles/submission.css"
+import "../styles/submission.css";
 
-const arr = [
-  {
-    title: "React Project",
-    description: "Description 1",
-  },
-  {
-    title: "Dot Net Project",
-    description: "Description jjdhha jdnlkfnsa klkdf klNLKDJ SkSKLSD 2",
-  },
-  {
-    title: "Wordpress Project",
-    description: "Description 3",
-  },
-];
+const profileData = {
+  fullname: "Roshik Duwal",
+  email: "roshikduwal@avfsramdE.com",
+  Role: "Admin",
+  phone: "985251213",
+  country: "US",
+  address: "Bangalore, India",
+};
 
-const lists = arr.map((item, index) => (
-  <ul key={index}>
-    <h2>{item.title}</h2>
-    <p>{item.description}</p>
-  </ul>
-));
-
-// const array = [
-//   {
-//     title: "Title 1",
-//     description: "Description 1",
-//   },
-//   {
-//     title: "Title 2",
-//     description: "Description 2",
-//   },
-//   {
-//     title: "Title 3",
-//     description: "Description 3",
-//   },
-// ];
-
-const Submission = () => {
+const submission = () => {
+  const { fullname, email, Role ,country , address ,phone } = profileData;
+  
   return (
-    <>
-      <div className="container">
-        <div className="left-container">
-          <h1>Upcoming Works</h1>
-          <p>{lists}</p>
+    profileData && (
+      <>
+        <div className="container">
+          <div className="profile">
+            Submission
+          </div>
+
+          <div className="profile-details">
+            <div>
+            <h4>Name:</h4> <p>{fullname || "N/A"}</p>
+            </div>
+            <div>
+            <h4>Email :</h4> <p>{email || "N/A"}</p>
+            </div>
+            <div>
+            <h4>Phone:</h4>  <p>{phone || "N/A"}</p>
+            </div>
+            <div>
+            <h4>Role:</h4>   <p>{Role || "N/A"}</p>
+            </div>
+            <div>
+            <h4>Country:</h4>  <p>{country || "N/A"}</p>
+            </div>
+            <div>
+            <h4>Address:</h4>  <p>{address || "N/A"}</p>
+            </div>
+          </div>
+
         </div>
-      </div>
-    </>
+      </>
+    )
   );
 };
 
-export default Submission;
+export default submission;

@@ -1,122 +1,44 @@
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
-  height: 500px;
-  margin-top: 10px;
-  margin-bottom: 8px;
-  font-family: sans-serif;
-  background: whitesmoke;
-  border-radius: 10px;
-  gap: 18px;
+  border-radius: 15px;
+  background-color: white;
   width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: white;
 }
-
-
-@media screen and (max-width:1165px) {
-  .container{
-    flex-direction: column;
-    padding: 1rem;
-    
-  }
-
-  .left-container{
-    width: 100% !important;
-
-  }
-
-  .right-container{
-    width: 100% !important;
-
-  }
-}
-
-.left-container {
+.profile {
   border: 0.5px solid rgb(255, 244, 244);
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   flex-wrap: wrap;
-  width: 45%;
-  height: 100%;
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  font: sans-serif;
-  border-radius: 14px;
   background: white;
 }
-
-
-.right-container {
-  border: 0.5px solid rgb(255, 244, 244);
+.container .profile-details {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  flex-wrap: wrap;
-  width: 56%;
-  height: 100%;
-  margin-right: 20px;
-  margin-left: 10px;
-  border-radius: 14px;
-  background: white;
+  gap: 0.3rem;
+ 
 }
-
-h1 {
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  font-size: 20px;
-
-  color: rgb(126, 121, 121);
-}
-
-.left-container p {
-  font-family: sans-serif;
-  margin-left: 60px;
-  margin-bottom: 10px;
+.container .profile-details p {
+  background-color: hsl(300, 13%, 95%);
+  gap: 0.5rem;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-align: center;
   font-size: 15px;
-  color: rgb(7, 7, 7);
-}
-
-ul {
-  margin-top: 10px;
+  font-weight: bold;
+  padding: 0.5rem;
   margin-left: 10px;
-  text-decoration: none;
-
-  font-size: 20px;
+  word-break: break-all;
 }
-ul li {
-  margin-top: 10px;
-  margin-left: 10px;
-  text-decoration: none;
-  font-size: 20px;
-
-  color: black;
-}
-
-.left-container h2 {
-  margin-left: 50px;
-  font-family: sans-serif;
-  font-size: 22px;
-}
-
-.right-container p {
-  margin-left: 10px;
-  margin-bottom: 10px;
+.container .profile-details h4 {
+  background-color: rgb(250, 248, 250);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
   font-size: 15px;
-  color: black;
-  font-family: sans-serif;
-}
-h2 {
-  margin-left: 20px;
-  margin-bottom: 10px;
-  font-size: 22px;
-  color: rgb(51, 49, 49);
-  font-family: sans-serif;
-}
-.logo {
-  display: flex;
-  gap: 10px;
+  max-width: 40%;
+  word-wrap: break-word;
 }
