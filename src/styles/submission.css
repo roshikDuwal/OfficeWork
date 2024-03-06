@@ -18,14 +18,12 @@
 .container .profile-details {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
- 
 }
 .container .profile-details p {
   background-color: hsl(300, 13%, 95%);
   gap: 0.5rem;
   margin-bottom: 20px;
-  margin-top: 15px;
+  margin-top: 5px;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
@@ -36,9 +34,20 @@
 .container .profile-details h4 {
   background-color: rgb(250, 248, 250);
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   font-size: 15px;
   max-width: 40%;
   word-wrap: break-word;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .profile-container {
+    width: 100%;
+  }
 }

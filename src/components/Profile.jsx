@@ -1,35 +1,34 @@
-import Logo from "../assets/logo.jpg";
+import Avatar from "@mui/material/Avatar";
+import { Grid, Typography, Box } from "@mui/material";
 import "../styles/profilebar.css";
 
 const profileData = {
   fullname: "Roshik Duwal",
   email: "roshikduwal@aviskaram.com",
-  Role: "Admin",
+  role: "User",
 };
 
 const Profile = () => {
-  const { fullname, email, Role } = profileData;
+  const { fullname, email, role } = profileData;
 
   return (
     profileData && (
       <>
         <div className="profile-container">
           <div className="profile-logo">
-            <img src={Logo} alt="profile-logo" />
-            <h3> {fullname || "User"}</h3>
+            <Avatar
+              alt="Roshik "
+              src="/assets/logo.jpg"
+              sx={{ width: 140, height: 140 }}
+            />
           </div>
-
-          <div className="profile-details">
-            <div>
-               <p>{fullname || "N/A"}</p>
-            </div>
-            <div>
-               <p>{email || "N/A"}</p>
-            </div>
-            <div>
-               <p>{Role || "N/A"}</p>
-            </div>
-          </div>
+          <Box sx={{ flexGrow: 1, overflow: "hidden", px: 3 }}>
+            <Grid item xs>
+              <Typography variant="h5">{`${fullname}`}</Typography>
+              <Typography variant="subtitle1">{email}</Typography>
+              <Typography variant="body1">{role}</Typography>
+            </Grid>
+          </Box>
         </div>
       </>
     )
