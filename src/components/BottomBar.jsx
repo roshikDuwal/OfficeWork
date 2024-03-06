@@ -1,5 +1,4 @@
 import "./BottomBar.css";
-import { FaBriefcase } from "react-icons/fa";
 
 const arr = [
   {
@@ -23,32 +22,20 @@ const lists = arr.map((item, index) => (
   </ul>
 ));
 
-const array = [
-  {
-    title: "Title 1",
-    description: "Description 1",
-  },
-  {
-    title: "Title 2",
-    description: "Description 2",
-  },
-  {
-    title: "Title 3",
-    description: "Description 3",
-  },
-];
-
-const listItem = array.map((item, index) => (
-  <ul key={index}>
-    <div className="logo">
-
-      <FaBriefcase />
-      {item.title}
-    </div>
-  
-    <p>{item.description}</p>
-  </ul>
-));
+// const array = [
+//   {
+//     title: "Title 1",
+//     description: "Description 1",
+//   },
+//   {
+//     title: "Title 2",
+//     description: "Description 2",
+//   },
+//   {
+//     title: "Title 3",
+//     description: "Description 3",
+//   },
+// ];
 
 const BottomBar = () => {
   return (
@@ -57,11 +44,6 @@ const BottomBar = () => {
         <div className="left-container">
           <h1>Upcoming Works</h1>
           <p>{lists}</p>
-        </div>
-
-        <div className="right-container">
-          <h1>Work List</h1>
-          <p>{listItem}</p>
         </div>
       </div>
     </>

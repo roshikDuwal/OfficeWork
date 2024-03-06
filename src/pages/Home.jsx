@@ -1,14 +1,11 @@
-
-import React from "react";
-import TopBar from "../components/TopBar";
 import BottomBar from "../components/BottomBar";
-
+import Profile from "../component/topbar/Profile";
 
 const Home = () => {
   return (
     <>
       <div className="homepage">
-        <TopBar />
+        <Profile />
         <BottomBar />
       </div>
     </>
