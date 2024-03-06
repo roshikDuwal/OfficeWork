@@ -1,12 +1,15 @@
-import BottomBar from "../components/BottomBar";
-import Profile from "../component/topbar/Profile";
+import Document from "../components/Document";
+import Profile from "../components/Profile";
+import Submission from "../components/Submission";
+
 
 const Home = () => {
   return (
     <>
       <div className="homepage">
         <Profile />
-        <BottomBar />
+        <Submission />
+        <Document/>
       </div>
     </>
   );

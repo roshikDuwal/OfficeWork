@@ -1,4 +1,4 @@
-import "./BottomBar.css";
+import "../styles/submission.css"
 
 const arr = [
   {
@@ -37,7 +37,7 @@ const lists = arr.map((item, index) => (
 //   },
 // ];
 
-const BottomBar = () => {
+const Submission = () => {
   return (
     <>
       <div className="container">
@@ -50,4 +50,4 @@ const BottomBar = () => {
   );
 };
 
-export default BottomBar;
+export default Submission;

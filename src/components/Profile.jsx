@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from "../../assets/logo.jpg";
+import Logo from "../assets/logo.jpg";
+import "../styles/profilebar.css"
 
 const profileData = {
   fullname: "Roshik Duwal",
