@@ -1,19 +1,19 @@
 import Box from "@mui/material/Box";
 
 import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 import "../styles/submission.css";
 
 const profileData = {
-  // fullname: "Roshik Duwal",
-  // email: "rowal@avfE.com",
+  fullname: "Roshik Duwal",
+  email: "rowal@avfE.com",
   // Role: "User",
   // phone: "985251213",
   // country: "US",
   // address: "Bangalore, India",
-  fullname: "",
-  email: "",
+  // fullname: "",
+  // email: "",
   Role: "",
   phone: "",
   country: "",
@@ -22,10 +22,6 @@ const profileData = {
 
 const submission = () => {
   const { fullname, email, Role, country, address, phone } = profileData;
-
-  const isAnyFieldEmpty = () => {
-    return !fullname || !email || !Role || !country || !address || !phone;
-  };
 
   return (
     // profileData && (
@@ -66,54 +62,126 @@ const submission = () => {
         overflow: "hidden",
         px: 3,
         background: "white",
-        padding: "10px",
-        marginBottom: "5x",
       }}
     >
-      {!isAnyFieldEmpty() ? (
-        <>
-          <Grid
-            item
-            style={{
-              textAlign: "center",
-              fontSize: "20px",
-            }}
-          >
-            Sumbission{" "}
-          </Grid>
-          <Grid container wrap="nowrap" spacing={2}>
-            <Grid item>Name : {fullname}</Grid>
-          </Grid>
-          <Grid container wrap="nowrap" spacing={2}>
-            <Grid item>Email : {email}</Grid>
-          </Grid>
-          <Grid container wrap="nowrap" spacing={2}>
-            <Grid item>Role : {Role}</Grid>
-          </Grid>
-          <Grid container wrap="nowrap" spacing={2}>
-            <Grid item>Phone : {phone}</Grid>
-          </Grid>
-          <Grid container wrap="nowrap" spacing={2}>
-            <Grid item>Address : {address}</Grid>
-          </Grid>
-          <Grid container wrap="nowrap" spacing={2}>
-            <Grid item>Country : {country}</Grid>
-          </Grid>
-        </>
-      ) : (
-        <Button
-          variant="outlined"
-          href="#outlined-buttons"
-          style={{
-            textDecoration: "none",
-            alignItems: "center",
-            display: "flex",
-           
-          }}
-        >
-          Link
-        </Button>
-      )}
+      <Grid
+        item
+        style={{
+          textAlign: "center",
+          fontSize: "20px",
+          margin: "20px 0px 20px 0px",
+        }}
+      >
+        Sumbission{" "}
+      </Grid>
+      <Grid container wrap="nowrap" spacing={4}>
+        <Grid item sx={8}>
+          <div style={{ marginBottom: "10px" }}>
+            Name :{" "}
+            {fullname || (
+              <Link
+                to=".."
+                relative="path"
+                style={{
+                  margin: "36px",
+                }}
+              >
+                Link
+              </Link>
+            )}
+          </div>
+        </Grid>
+      </Grid>
+      <Grid container spacing={4}>
+        <Grid item sx={8}>
+          <div style={{ marginBottom: "10px" }}>
+            Email :{" "}
+            {email || (
+              <Link
+                to=".."
+                relative="path"
+                style={{
+                  margin: "40px",
+                }}
+              >
+                link
+              </Link>
+            )}
+          </div>
+        </Grid>
+      </Grid>
+      <Grid container wrap="nowrap" spacing={4}>
+        <Grid item sx={8}>
+          <div style={{ marginBottom: "10px" }}>
+            Role :{" "}
+            {Role || (
+              <Link
+                to=".."
+                relative="path"
+                style={{
+                  margin: "50px",
+                }}
+              >
+                link
+              </Link>
+            )}
+          </div>
+        </Grid>
+      </Grid>
+      <Grid container wrap="nowrap" spacing={4}>
+        <Grid item sx={8}>
+          <div style={{ marginBottom: "10px" }}>
+            Phone :{" "}
+            {phone || (
+              <Link
+                to=".."
+                relative="path"
+                style={{
+                  margin: "35px",
+                }}
+              >
+                link
+              </Link>
+            )}
+          </div>
+        </Grid>
+      </Grid>
+      <Grid container wrap="nowrap" spacing={4}>
+        <Grid item sx={"8"}>
+          <div style={{ marginBottom: "10px" }}>
+            Address :{" "}
+            {address || (
+              <Link
+                to=".."
+                relative="path"
+                style={{
+                  margin: "20px",
+                }}
+              >
+                link
+              </Link>
+            )}
+          </div>
+        </Grid>
+      </Grid>
+      <Grid container wrap="nowrap" spacing={4}>
+        <Grid item sx={8}>
+          <div style={{ marginBottom: "10px" }}>
+            Country :{" "}
+            {country || (
+              <Link
+                to=".."
+                relative="path"
+                style={{
+                  margin: "20px",
+                }}
+              >
+                link
+              </Link>
+            )}
+          </div>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
